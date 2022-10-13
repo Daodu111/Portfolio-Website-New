@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e08cf96065.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Aisha</title>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="../images/logo 1.png" class="logo" alt="LOGO">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">What I do</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times"onclick='closemenu()'></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="showcase-content">
+            <div class="showcase-text">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Aisha Daodu</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+            </div>
+        </div>
+       </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../images/about-img.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>I design and code beautifully simple things, and I
+                        love what I do. I'm a UX/UI and visual designer who
+                        strives to create frictionless user experiences that
+                        help elevate brands.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Bilding seamless Web Applications</li>
+                            <li><span>UI/UX Design</span><br>Designing web and app interfaces </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>April 2022-Present</span><br>Frontend Engineering student at AltSchool Africa</li>
+                            <li><span>April 2022-May2022</span><br>Try kibo Web foundations Class</li>
+                            <li><span>January 2022-April2022</span><br>Hydraxx Design Bootcamp</li>
+                            <li><span>Sept 2021-Dec2021</span><br>AboCoders Web Development Trainee</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2024</span><br>Bsc Agric</li>
+                            <li><span>2022-2025</span><br>Bsc Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I do</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+   <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../images/img-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>This is a game of three chances and you'l be able to play the game with your pc.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/img-4.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>This is my first major portfolio website</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!--<div class="work">
+                    <img src="../images/img-2.png" alt="">
+                </div>
+                <div class="work">
+                    <img src="../images/img-3.png" alt="">
+                </div>
+                <div class="work">
+                    <img src="../images/img-4.jpeg" alt="">
+                </div>-->
+                <div class="work">
+                    <img src="../images/img-5.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Typography Article</h3>
+                        <p>The article explains what needs to be known about typograph and hiw to use it. It is my first published medium post</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="http://aishadaodu.infinityfreeapp.com/?=1&i=1" class="btn">See more</a>
+        </div>
+   </div>
+
+
+   <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>aishajumoke15@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 07017666137</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/Symply_stormi22"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/symply_stormidesigns/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/daodu-aisha-633b97222"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="../images/Aisha's Resume (3).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &#169; Aisha Daodu</p>
+        </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+</body>
+</html>
